@@ -46,7 +46,15 @@ export default function ProfileHero({ data }) {
             Profil Kelurahan
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6">
+          {/* FIXED: Added proper padding and line height to prevent text clipping */}
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-8 px-4 py-4 leading-tight"
+            style={{
+              paddingBottom: "1rem",
+              paddingTop: "0.5rem",
+              lineHeight: "1.2",
+            }}
+          >
             {data.name}
           </h1>
 
@@ -83,7 +91,14 @@ export default function ProfileHero({ data }) {
 
         {/* Quick Info */}
         <div className="bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/50">
-          <h2 className="text-xl sm:text-2xl font-bold gradient-text mb-6 text-center">
+          {/* FIXED: Added padding to prevent gradient text clipping */}
+          <h2
+            className="text-xl sm:text-2xl font-bold gradient-text mb-8 text-center px-2 py-2"
+            style={{
+              paddingBottom: "0.75rem",
+              paddingTop: "0.25rem",
+            }}
+          >
             Gambaran Umum
           </h2>
           <div className="text-center text-gray-700 leading-relaxed">
