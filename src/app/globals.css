@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --primary-green: #22c55e;
+    --primary-green-dark: #16a34a;
+    --primary-green-light: #4ade80;
+    --secondary-green: #dcfce7;
+    --accent-green: #86efac;
+    --forest-green: #15803d;
+    --mint-green: #f0fdf4;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply text-gray-800 antialiased;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer components {
+    .btn-primary {
+        @apply bg-gradient-to-r from-green-400 to-green-500 hover:from-green-500 hover:to-green-600 text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-500 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105;
+    }
+
+    .card-hover {
+        @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-105;
+    }
+
+    .gradient-green {
+        background: linear-gradient(
+            135deg,
+            #22c55e 0%,
+            #4ade80 50%,
+            #86efac 100%
+        );
+    }
+
+    .glass-effect {
+        @apply bg-white/10 backdrop-blur-xl border border-white/20;
+    }
+
+    .floating-animation {
+        animation: floating 6s ease-in-out infinite;
+    }
+
+    .pulse-glow {
+        @apply animate-pulse;
+        box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+    }
+
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .gradient-text {
+        @apply bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 bg-clip-text text-transparent;
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes floating {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-green-400 to-green-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-green-500 to-green-600;
 }

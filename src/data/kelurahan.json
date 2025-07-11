@@ -1,0 +1,106 @@
+{
+  "profile": {
+    "name": "Kelurahan Kemayoran",
+    "kecamatan": "Krembangan",
+    "kota": "Surabaya",
+    "provinsi": "Jawa Timur",
+    "kodePos": "60177",
+    "luasWilayah": "2.45",
+    "jumlahPenduduk": 15847,
+    "jumlahKK": 4263,
+    "kepadatan": 6468,
+    "batasWilayah": {
+      "utara": "Kelurahan Kemayoran Barat",
+      "selatan": "Kelurahan Perak Utara",
+      "timur": "Kelurahan Krembangan Utara",
+      "barat": "Kali Mas"
+    },
+    "visi": "Terwujudnya Kelurahan Kemayoran sebagai wilayah yang maju, mandiri, dan sejahtera dengan pelayanan prima berbasis teknologi.",
+    "misi": [
+      "Meningkatkan kualitas pelayanan publik yang prima dan transparan",
+      "Memberdayakan masyarakat melalui program-program pembangunan berkelanjutan",
+      "Mengembangkan ekonomi kerakyatan dan UMKM lokal",
+      "Memperkuat sistem keamanan dan ketertiban masyarakat",
+      "Membangun infrastruktur yang mendukung kesejahteraan warga"
+    ]
+  },
+  "aparatur": [
+    {
+      "id": 1,
+      "nama": "Drs. Ahmad Suryanto, M.Si",
+      "jabatan": "Lurah",
+      "nip": "196805151990031008",
+      "pendidikan": "S2 Administrasi Publik",
+      "foto": "/images/aparatur/lurah.jpg",
+      "telefon": "(031) 123-4567",
+      "email": "lurah@kemayoran-sby.go.id"
+    },
+    {
+      "id": 2,
+      "nama": "Siti Aminah, S.Sos",
+      "jabatan": "Sekretaris Lurah",
+      "nip": "197203121995032007",
+      "pendidikan": "S1 Ilmu Sosial",
+      "foto": "/images/aparatur/sekretaris.jpg",
+      "telefon": "(031) 123-4568",
+      "email": "sekretaris@kemayoran-sby.go.id"
+    },
+    {
+      "id": 3,
+      "nama": "Bambang Priyanto, S.Kom",
+      "jabatan": "Kasi Pemerintahan",
+      "nip": "198007051999031012",
+      "pendidikan": "S1 Sistem Informasi",
+      "foto": "/images/aparatur/kasi-pemerintahan.jpg",
+      "telefon": "(031) 123-4569",
+      "email": "pemerintahan@kemayoran-sby.go.id"
+    },
+    {
+      "id": 4,
+      "nama": "Dewi Sartika, S.E",
+      "jabatan": "Kasi Kesejahteraan",
+      "nip": "198512101999032015",
+      "pendidikan": "S1 Ekonomi",
+      "foto": "/images/aparatur/kasi-kesejahteraan.jpg",
+      "telefon": "(031) 123-4570",
+      "email": "kesejahteraan@kemayoran-sby.go.id"
+    },
+    {
+      "id": 5,
+      "nama": "Eko Prasetyo, S.T",
+      "jabatan": "Kasi Pelayanan",
+      "nip": "197909151999031010",
+      "pendidikan": "S1 Teknik Sipil",
+      "foto": "/images/aparatur/kasi-pelayanan.jpg",
+      "telefon": "(031) 123-4571",
+      "email": "pelayanan@kemayoran-sby.go.id"
+    },
+    {
+      "id": 6,
+      "nama": "Maya Indrawati, A.Md",
+      "jabatan": "Staff Administrasi",
+      "nip": "199001051999032018",
+      "pendidikan": "D3 Administrasi",
+      "foto": "/images/aparatur/staff-admin.jpg",
+      "telefon": "(031) 123-4572",
+      "email": "admin@kemayoran-sby.go.id"
+    }
+  ],
+  "fasilitas": [
+    {
+      "nama": "Balai Kelurahan",
+      "alamat": "Jl. Kemayoran No. 123",
+      "fasilitas": ["Ruang Pelayanan", "Ruang Rapat", "Parkir"]
+    },
+    {
+      "nama": "Posyandu Melati",
+      "alamat": "RT 03/RW 02",
+      "fasilitas": ["Pelayanan Kesehatan", "Imunisasi", "Penimbangan Balita"]
+    },
+    {
+      "nama": "PAUD Tunas Bangsa",
+      "alamat": "RT 05/RW 03",
+      "fasilitas": ["Ruang Kelas", "Playground", "Perpustakaan Mini"]
+    }
+  ]
+}

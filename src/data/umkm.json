@@ -1,0 +1,202 @@
+{
+  "umkm": [
+    {
+      "id": 1,
+      "slug": "warung-bu-sari",
+      "nama": "Warung Bu Sari",
+      "pemilik": "Sari Indrawati",
+      "kategori": "Kuliner",
+      "deskripsi": "Warung makan tradisional dengan menu masakan Jawa timur yang autentik. Sudah berdiri sejak 1995 dan menjadi favorit warga sekitar.",
+      "alamat": "Jl. Kemayoran No. 45, RT 02/RW 01",
+      "telefon": "0812-3456-7890",
+      "email": "warungbusari@gmail.com",
+      "jamOperasional": {
+        "senin_kamis": "06:00 - 21:00",
+        "jumat": "06:00 - 21:00",
+        "sabtu_minggu": "06:00 - 22:00"
+      },
+      "produkUnggulan": ["Nasi Gudeg", "Ayam Bakar", "Pecel Lele", "Es Dawet"],
+      "hargaRange": "Rp 15.000 - Rp 35.000",
+      "sosialMedia": {
+        "instagram": "@warungbusari",
+        "whatsapp": "081234567890"
+      },
+      "foto": "/images/umkm/warung-bu-sari.jpg",
+      "rating": 4.8,
+      "tahunBerdiri": "1995"
+    },
+    {
+      "id": 2,
+      "slug": "toko-elektronik-jaya",
+      "nama": "Toko Elektronik Jaya",
+      "pemilik": "Bambang Suryono",
+      "kategori": "Elektronik",
+      "deskripsi": "Toko elektronik terpercaya yang menyediakan berbagai peralatan elektronik rumah tangga dengan harga bersaing dan pelayanan terbaik.",
+      "alamat": "Jl. Kemayoran Raya No. 78, RT 04/RW 02",
+      "telefon": "0813-5678-9012",
+      "email": "elektronikjaya@yahoo.com",
+      "jamOperasional": {
+        "senin_kamis": "08:00 - 20:00",
+        "jumat": "08:00 - 17:00",
+        "sabtu_minggu": "08:00 - 21:00"
+      },
+      "produkUnggulan": ["TV LED", "Kulkas", "Mesin Cuci", "AC Split"],
+      "hargaRange": "Rp 500.000 - Rp 15.000.000",
+      "sosialMedia": {
+        "facebook": "Elektronik Jaya",
+        "whatsapp": "081356789012"
+      },
+      "foto": "/images/umkm/elektronik-jaya.jpg",
+      "rating": 4.6,
+      "tahunBerdiri": "2008"
+    },
+    {
+      "id": 3,
+      "slug": "salon-cantik-maya",
+      "nama": "Salon Cantik Maya",
+      "pemilik": "Maya Sari",
+      "kategori": "Kecantikan",
+      "deskripsi": "Salon kecantikan modern yang menyediakan layanan perawatan rambut, wajah, dan nail art dengan tenaga ahli berpengalaman.",
+      "alamat": "Jl. Kemayoran Indah No. 23, RT 06/RW 03",
+      "telefon": "0814-7890-1234",
+      "email": "saloncantik.maya@gmail.com",
+      "jamOperasional": {
+        "senin_kamis": "09:00 - 18:00",
+        "jumat": "09:00 - 17:00",
+        "sabtu_minggu": "08:00 - 19:00"
+      },
+      "produkUnggulan": [
+        "Hair Styling",
+        "Facial Treatment",
+        "Nail Art",
+        "Make Up"
+      ],
+      "hargaRange": "Rp 25.000 - Rp 200.000",
+      "sosialMedia": {
+        "instagram": "@saloncantik_maya",
+        "tiktok": "@mayasalon",
+        "whatsapp": "081478901234"
+      },
+      "foto": "/images/umkm/salon-maya.jpg",
+      "rating": 4.9,
+      "tahunBerdiri": "2012"
+    },
+    {
+      "id": 4,
+      "slug": "bengkel-motor-agus",
+      "nama": "Bengkel Motor Agus",
+      "pemilik": "Agus Santoso",
+      "kategori": "Otomotif",
+      "deskripsi": "Bengkel motor terpercaya dengan layanan service dan spare part lengkap. Melayani semua jenis motor dengan harga terjangkau.",
+      "alamat": "Jl. Kemayoran Utara No. 12, RT 01/RW 01",
+      "telefon": "0815-9012-3456",
+      "email": "bengkelagus@gmail.com",
+      "jamOperasional": {
+        "senin_kamis": "08:00 - 17:00",
+        "jumat": "08:00 - 16:00",
+        "sabtu_minggu": "08:00 - 15:00"
+      },
+      "produkUnggulan": [
+        "Service Motor",
+        "Ganti Oli",
+        "Spare Part",
+        "Modifikasi"
+      ],
+      "hargaRange": "Rp 20.000 - Rp 500.000",
+      "sosialMedia": {
+        "whatsapp": "081590123456"
+      },
+      "foto": "/images/umkm/bengkel-agus.jpg",
+      "rating": 4.7,
+      "tahunBerdiri": "2005"
+    },
+    {
+      "id": 5,
+      "slug": "toko-baju-fashion",
+      "nama": "Fashion Store Kemayoran",
+      "pemilik": "Rina Permata",
+      "kategori": "Fashion",
+      "deskripsi": "Toko pakaian dengan koleksi fashion terkini untuk pria dan wanita. Menyediakan berbagai style dari casual hingga formal dengan harga terjangkau.",
+      "alamat": "Jl. Kemayoran Tengah No. 67, RT 05/RW 02",
+      "telefon": "0816-1234-5678",
+      "email": "fashionstore.kemayoran@gmail.com",
+      "jamOperasional": {
+        "senin_kamis": "09:00 - 21:00",
+        "jumat": "09:00 - 21:00",
+        "sabtu_minggu": "08:00 - 22:00"
+      },
+      "produkUnggulan": ["Baju Kerja", "Casual Wear", "Dress", "Aksesoris"],
+      "hargaRange": "Rp 50.000 - Rp 300.000",
+      "sosialMedia": {
+        "instagram": "@fashionstore_kemayoran",
+        "facebook": "Fashion Store Kemayoran",
+        "whatsapp": "081612345678"
+      },
+      "foto": "/images/umkm/fashion-store.jpg",
+      "rating": 4.5,
+      "tahunBerdiri": "2018"
+    },
+    {
+      "id": 6,
+      "slug": "kue-mama-lia",
+      "nama": "Kue Mama Lia",
+      "pemilik": "Lia Kusuma",
+      "kategori": "Kuliner",
+      "deskripsi": "Home bakery yang menyediakan berbagai kue tradisional dan modern. Menggunakan bahan berkualitas tinggi dan resep turun temurun.",
+      "alamat": "Jl. Kemayoran Selatan No. 34, RT 03/RW 02",
+      "telefon": "0817-2345-6789",
+      "email": "kuemamaLia@gmail.com",
+      "jamOperasional": {
+        "senin_kamis": "07:00 - 19:00",
+        "jumat": "07:00 - 19:00",
+        "sabtu_minggu": "06:00 - 20:00"
+      },
+      "produkUnggulan": [
+        "Kue Lapis",
+        "Brownies",
+        "Kue Ulang Tahun",
+        "Snack Box"
+      ],
+      "hargaRange": "Rp 10.000 - Rp 150.000",
+      "sosialMedia": {
+        "instagram": "@kuemamaLia",
+        "whatsapp": "081723456789"
+      },
+      "foto": "/images/umkm/kue-mama-lia.jpg",
+      "rating": 4.8,
+      "tahunBerdiri": "2015"
+    }
+  ],
+  "kategori": [
+    {
+      "nama": "Kuliner",
+      "icon": "🍽️",
+      "count": 2,
+      "color": "emerald"
+    },
+    {
+      "nama": "Elektronik",
+      "icon": "📱",
+      "count": 1,
+      "color": "blue"
+    },
+    {
+      "nama": "Kecantikan",
+      "icon": "💄",
+      "count": 1,
+      "color": "pink"
+    },
+    {
+      "nama": "Otomotif",
+      "icon": "🔧",
+      "count": 1,
+      "color": "gray"
+    },
+    {
+      "nama": "Fashion",
+      "icon": "👗",
+      "count": 1,
+      "color": "purple"
+    }
+  ]
+}
