@@ -9,19 +9,11 @@ export default function StatsSection() {
   const stats = [
     {
       icon: ChartBarIcon,
-      number: "15,847",
+      number: "17,659",
       label: "Total Penduduk",
       description: "Jiwa terdaftar",
       color: "green",
       gradient: "from-green-400 to-emerald-500",
-    },
-    {
-      icon: HomeIcon,
-      number: "4,263",
-      label: "Kepala Keluarga",
-      description: "Rumah tangga",
-      color: "emerald",
-      gradient: "from-emerald-400 to-teal-500",
     },
     {
       icon: AcademicCapIcon,
@@ -32,9 +24,17 @@ export default function StatsSection() {
       gradient: "from-teal-400 to-cyan-500",
     },
     {
+      icon: HomeIcon,
+      number: "74",
+      label: "RT",
+      description: "Wilayah administrasi",
+      color: "emerald",
+      gradient: "from-emerald-400 to-teal-500",
+    },
+    {
       icon: HeartIcon,
-      number: "8",
-      label: "RT/RW",
+      number: "9",
+      label: "RW",
       description: "Wilayah administrasi",
       color: "green",
       gradient: "from-green-400 to-emerald-500",
@@ -121,8 +121,8 @@ export default function StatsSection() {
               </p>
               <div className="space-y-3">
                 {[
-                  { label: "Luas Wilayah:", value: "2.45 km²" },
-                  { label: "Kepadatan:", value: "6,468 jiwa/km²" },
+                  { label: "Luas Wilayah:", value: "2.35 km²" },
+                  { label: "Kepadatan:", value: "7,514 jiwa/km²" },
                   { label: "Kode Pos:", value: "60177" },
                 ].map((item, index) => (
                   <div key={index} className="flex items-center group">
@@ -145,11 +145,10 @@ export default function StatsSection() {
               <div className="space-y-3">
                 {[
                   {
-                    day: "Senin - Kamis",
-                    time: "08:00 - 15:00",
+                    day: "Senin - Jumat",
+                    time: "07:00 - 16:00",
                     available: true,
                   },
-                  { day: "Jumat", time: "08:00 - 11:00", available: true },
                   { day: "Sabtu - Minggu", time: "Tutup", available: false },
                 ].map((schedule, index) => (
                   <div

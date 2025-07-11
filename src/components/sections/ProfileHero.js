@@ -14,12 +14,6 @@ export default function ProfileHero({ data }) {
       color: "emerald",
     },
     {
-      icon: HomeIcon,
-      value: data.jumlahKK.toLocaleString("id-ID"),
-      label: "Kepala Keluarga",
-      color: "green",
-    },
-    {
       icon: ChartBarIcon,
       value: `${data.luasWilayah} km²`,
       label: "Luas Wilayah",
@@ -66,23 +60,25 @@ export default function ProfileHero({ data }) {
           </div>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {stats.map((stat, index) => (
-            <div key={index} className="group">
-              <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-xl card-hover border border-white/50 text-center">
-                <div
-                  className={`w-12 h-12 bg-gradient-to-br from-${stat.color}-400 to-${stat.color}-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
-                >
-                  <stat.icon className="w-6 h-6 text-white" />
+        {/* Stats Grid - Centered for 3 cards */}
+        <div className="flex justify-center mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl">
+            {stats.map((stat, index) => (
+              <div key={index} className="group">
+                <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-xl card-hover border border-white/50 text-center">
+                  <div
+                    className={`w-12 h-12 bg-gradient-to-br from-${stat.color}-400 to-${stat.color}-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
+                  >
+                    <stat.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">
+                    {stat.value}
+                  </h3>
+                  <p className="text-sm text-gray-600">{stat.label}</p>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">
-                  {stat.value}
-                </h3>
-                <p className="text-sm text-gray-600">{stat.label}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Quick Info */}
