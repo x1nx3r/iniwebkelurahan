@@ -2,201 +2,209 @@
   "umkm": [
     {
       "id": 1,
-      "slug": "warung-bu-sari",
-      "nama": "Warung Bu Sari",
-      "pemilik": "Sari Indrawati",
-      "kategori": "Kuliner",
-      "deskripsi": "Warung makan tradisional dengan menu masakan Jawa timur yang autentik. Sudah berdiri sejak 1995 dan menjadi favorit warga sekitar.",
-      "alamat": "Jl. Kemayoran No. 45, RT 02/RW 01",
-      "telefon": "0812-3456-7890",
-      "email": "warungbusari@gmail.com",
-      "jamOperasional": {
-        "senin_kamis": "06:00 - 21:00",
-        "jumat": "06:00 - 21:00",
-        "sabtu_minggu": "06:00 - 22:00"
-      },
-      "produkUnggulan": ["Nasi Gudeg", "Ayam Bakar", "Pecel Lele", "Es Dawet"],
-      "hargaRange": "Rp 15.000 - Rp 35.000",
+      "slug": "nafa-food-cake",
+      "nama": "Nafa Food & Cake",
+      "pemilik": "Ibu Fatmawati",
+      "deskripsi": "Usaha makanan dan kue rumahan yang menyediakan berbagai jenis makanan dan kue untuk kebutuhan sehari-hari maupun acara khusus.",
+      "alamat": "Jl Krembangan Jaya Selatan 2A, No. 8, Kemayoran, Surabaya",
+      "telefon": "082245148738",
       "sosialMedia": {
-        "instagram": "@warungbusari",
-        "whatsapp": "081234567890"
-      },
-      "foto": "/images/umkm/warung-bu-sari.jpg",
-      "rating": 4.8,
-      "tahunBerdiri": "1995"
+        "whatsapp": "082245148738"
+      }
     },
     {
       "id": 2,
-      "slug": "toko-elektronik-jaya",
-      "nama": "Toko Elektronik Jaya",
-      "pemilik": "Bambang Suryono",
-      "kategori": "Elektronik",
-      "deskripsi": "Toko elektronik terpercaya yang menyediakan berbagai peralatan elektronik rumah tangga dengan harga bersaing dan pelayanan terbaik.",
-      "alamat": "Jl. Kemayoran Raya No. 78, RT 04/RW 02",
-      "telefon": "0813-5678-9012",
-      "email": "elektronikjaya@yahoo.com",
-      "jamOperasional": {
-        "senin_kamis": "08:00 - 20:00",
-        "jumat": "08:00 - 17:00",
-        "sabtu_minggu": "08:00 - 21:00"
-      },
-      "produkUnggulan": ["TV LED", "Kulkas", "Mesin Cuci", "AC Split"],
-      "hargaRange": "Rp 500.000 - Rp 15.000.000",
+      "slug": "warung-nasi-campur-sapril",
+      "nama": "Warung Nasi Campur",
+      "pemilik": "Ibu Sapril",
+      "deskripsi": "Warung nasi campur dengan menu beragam dan cita rasa yang lezat, cocok untuk makan sehari-hari dengan harga terjangkau.",
+      "alamat": "Jl. Krembangan Jaya Selatan 2D, No.2 Kemayoran, Surabaya",
+      "telefon": "082312670760",
       "sosialMedia": {
-        "facebook": "Elektronik Jaya",
-        "whatsapp": "081356789012"
-      },
-      "foto": "/images/umkm/elektronik-jaya.jpg",
-      "rating": 4.6,
-      "tahunBerdiri": "2008"
+        "whatsapp": "082312670760"
+      }
     },
     {
       "id": 3,
-      "slug": "salon-cantik-maya",
-      "nama": "Salon Cantik Maya",
-      "pemilik": "Maya Sari",
-      "kategori": "Kecantikan",
-      "deskripsi": "Salon kecantikan modern yang menyediakan layanan perawatan rambut, wajah, dan nail art dengan tenaga ahli berpengalaman.",
-      "alamat": "Jl. Kemayoran Indah No. 23, RT 06/RW 03",
-      "telefon": "0814-7890-1234",
-      "email": "saloncantik.maya@gmail.com",
-      "jamOperasional": {
-        "senin_kamis": "09:00 - 18:00",
-        "jumat": "09:00 - 17:00",
-        "sabtu_minggu": "08:00 - 19:00"
-      },
-      "produkUnggulan": [
-        "Hair Styling",
-        "Facial Treatment",
-        "Nail Art",
-        "Make Up"
-      ],
-      "hargaRange": "Rp 25.000 - Rp 200.000",
+      "slug": "aneka-kue-mutmainah",
+      "nama": "Aneka Kue",
+      "pemilik": "Ibu Mutmainah Saimah",
+      "deskripsi": "Usaha rumahan yang menyediakan berbagai macam kue tradisional dan modern untuk berbagai acara dan konsumsi harian.",
+      "alamat": "Jl. Krembangan Jaya Selatan 2D, No.2B Kemayoran, Surabaya",
+      "telefon": "081234225594",
       "sosialMedia": {
-        "instagram": "@saloncantik_maya",
-        "tiktok": "@mayasalon",
-        "whatsapp": "081478901234"
-      },
-      "foto": "/images/umkm/salon-maya.jpg",
-      "rating": 4.9,
-      "tahunBerdiri": "2012"
+        "whatsapp": "081234225594"
+      }
     },
     {
       "id": 4,
-      "slug": "bengkel-motor-agus",
-      "nama": "Bengkel Motor Agus",
-      "pemilik": "Agus Santoso",
-      "kategori": "Otomotif",
-      "deskripsi": "Bengkel motor terpercaya dengan layanan service dan spare part lengkap. Melayani semua jenis motor dengan harga terjangkau.",
-      "alamat": "Jl. Kemayoran Utara No. 12, RT 01/RW 01",
-      "telefon": "0815-9012-3456",
-      "email": "bengkelagus@gmail.com",
-      "jamOperasional": {
-        "senin_kamis": "08:00 - 17:00",
-        "jumat": "08:00 - 16:00",
-        "sabtu_minggu": "08:00 - 15:00"
-      },
-      "produkUnggulan": [
-        "Service Motor",
-        "Ganti Oli",
-        "Spare Part",
-        "Modifikasi"
-      ],
-      "hargaRange": "Rp 20.000 - Rp 500.000",
+      "slug": "warung-lontong-mie-sumiati",
+      "nama": "Warung Lontong Mie",
+      "pemilik": "Ibu Sumiati",
+      "deskripsi": "Warung spesialis lontong mie dengan kuah yang gurih dan topping yang lengkap, menjadi favorit warga sekitar.",
+      "alamat": "Jl. Krembangan Jaya Selatan 2D, No.19 Kemayoran, Surabaya",
+      "telefon": "081330058055",
       "sosialMedia": {
-        "whatsapp": "081590123456"
-      },
-      "foto": "/images/umkm/bengkel-agus.jpg",
-      "rating": 4.7,
-      "tahunBerdiri": "2005"
+        "whatsapp": "081330058055"
+      }
     },
     {
       "id": 5,
-      "slug": "toko-baju-fashion",
-      "nama": "Fashion Store Kemayoran",
-      "pemilik": "Rina Permata",
-      "kategori": "Fashion",
-      "deskripsi": "Toko pakaian dengan koleksi fashion terkini untuk pria dan wanita. Menyediakan berbagai style dari casual hingga formal dengan harga terjangkau.",
-      "alamat": "Jl. Kemayoran Tengah No. 67, RT 05/RW 02",
-      "telefon": "0816-1234-5678",
-      "email": "fashionstore.kemayoran@gmail.com",
-      "jamOperasional": {
-        "senin_kamis": "09:00 - 21:00",
-        "jumat": "09:00 - 21:00",
-        "sabtu_minggu": "08:00 - 22:00"
-      },
-      "produkUnggulan": ["Baju Kerja", "Casual Wear", "Dress", "Aksesoris"],
-      "hargaRange": "Rp 50.000 - Rp 300.000",
+      "slug": "bakmi-dua-anak",
+      "nama": "Bakmi Dua Anak",
+      "pemilik": "Pak Okky",
+      "deskripsi": "Warung bakmi dengan resep turun temurun yang menyajikan bakmi dengan cita rasa yang otentik dan porsi yang mengenyangkan.",
+      "alamat": "Jl. Krembangan Budidayan, No 4, Kemayoran, Surabaya",
+      "telefon": "081234052373",
       "sosialMedia": {
-        "instagram": "@fashionstore_kemayoran",
-        "facebook": "Fashion Store Kemayoran",
-        "whatsapp": "081612345678"
-      },
-      "foto": "/images/umkm/fashion-store.jpg",
-      "rating": 4.5,
-      "tahunBerdiri": "2018"
+        "whatsapp": "081234052373"
+      }
     },
     {
       "id": 6,
-      "slug": "kue-mama-lia",
-      "nama": "Kue Mama Lia",
-      "pemilik": "Lia Kusuma",
-      "kategori": "Kuliner",
-      "deskripsi": "Home bakery yang menyediakan berbagai kue tradisional dan modern. Menggunakan bahan berkualitas tinggi dan resep turun temurun.",
-      "alamat": "Jl. Kemayoran Selatan No. 34, RT 03/RW 02",
-      "telefon": "0817-2345-6789",
-      "email": "kuemamaLia@gmail.com",
-      "jamOperasional": {
-        "senin_kamis": "07:00 - 19:00",
-        "jumat": "07:00 - 19:00",
-        "sabtu_minggu": "06:00 - 20:00"
-      },
-      "produkUnggulan": [
-        "Kue Lapis",
-        "Brownies",
-        "Kue Ulang Tahun",
-        "Snack Box"
-      ],
-      "hargaRange": "Rp 10.000 - Rp 150.000",
+      "slug": "sari-kedelai-kacang-hijau",
+      "nama": "Sari Kedelai & Kacang Hijau",
+      "pemilik": "Ibu Sari",
+      "deskripsi": "Usaha minuman sehat berbahan dasar kedelai dan kacang hijau yang segar dan bergizi untuk kesehatan keluarga.",
+      "alamat": "Jl. Krembangan Bhakti 7b, No 39, Kemayoran, Surabaya",
+      "telefon": "082337076970",
       "sosialMedia": {
-        "instagram": "@kuemamaLia",
-        "whatsapp": "081723456789"
-      },
-      "foto": "/images/umkm/kue-mama-lia.jpg",
-      "rating": 4.8,
-      "tahunBerdiri": "2015"
-    }
-  ],
-  "kategori": [
-    {
-      "nama": "Kuliner",
-      "icon": "🍽️",
-      "count": 2,
-      "color": "emerald"
+        "whatsapp": "082337076970"
+      }
     },
     {
-      "nama": "Elektronik",
-      "icon": "📱",
-      "count": 1,
-      "color": "blue"
+      "id": 7,
+      "slug": "warung-bu-agung",
+      "nama": "Warung Bu Agung",
+      "pemilik": "Ibu Agung",
+      "deskripsi": "Warung makan dengan menu rumahan yang lengkap dan cita rasa yang enak, menyajikan makanan dengan harga terjangkau.",
+      "alamat": "Jl. Krembangan Bhakti Gg. XII No.47, Kemayoran",
+      "telefon": "088231752839",
+      "sosialMedia": {
+        "whatsapp": "088231752839"
+      }
     },
     {
-      "nama": "Kecantikan",
-      "icon": "💄",
-      "count": 1,
-      "color": "pink"
+      "id": 8,
+      "slug": "kiss-mie-ratna",
+      "nama": "Kiss Mie",
+      "pemilik": "Ibu Ratna Farida",
+      "deskripsi": "Warung mie spesialis dengan berbagai varian mie yang lezat dan topping yang beragam, cocok untuk semua kalangan.",
+      "alamat": "Jl. Krembangan Jaya Selatan 2, No.31, Kemayoran, Surabaya",
+      "telefon": "0859370068677",
+      "sosialMedia": {
+        "whatsapp": "0859370068677"
+      }
     },
     {
-      "nama": "Otomotif",
-      "icon": "🔧",
-      "count": 1,
-      "color": "gray"
+      "id": 9,
+      "slug": "pawon-bu-gilda",
+      "nama": "Pawon Bu Gilda",
+      "pemilik": "Ibu Gilda Moreen",
+      "deskripsi": "Dapur rumahan yang menyediakan masakan rumah dengan cita rasa yang autentik dan porsi yang memuaskan.",
+      "alamat": "Jl. Krembangan Jaya Utara 9, No.10, Kemayoran, Surabaya",
+      "telefon": "082331195372",
+      "sosialMedia": {
+        "whatsapp": "082331195372"
+      }
     },
     {
-      "nama": "Fashion",
-      "icon": "👗",
-      "count": 1,
-      "color": "purple"
+      "id": 10,
+      "slug": "pawon-mbak-era",
+      "nama": "Pawon Mbak Era",
+      "pemilik": "Ibu Erawati",
+      "deskripsi": "Usaha catering dan masakan rumahan dengan menu yang bervariasi dan cita rasa yang lezat untuk berbagai acara.",
+      "alamat": "Jl. Krembangan Jaya Selatan 3, No.15, Kemayoran, Surabaya",
+      "telefon": "082229074874",
+      "sosialMedia": {
+        "whatsapp": "082229074874"
+      }
+    },
+    {
+      "id": 11,
+      "slug": "bakso-bu-satinem",
+      "nama": "Bakso Bu Satinem",
+      "pemilik": "Ibu Satinem",
+      "deskripsi": "Warung bakso dengan kuah yang gurih dan bakso yang kenyal, dilengkapi dengan berbagai pelengkap yang segar.",
+      "alamat": "Jl. Krembangan Bhakti 5c, No.4, Kemayoran, Surabaya",
+      "telefon": "087768630028",
+      "sosialMedia": {
+        "whatsapp": "087768630028"
+      }
+    },
+    {
+      "id": 12,
+      "slug": "dapur-endul",
+      "nama": "Dapur Endul",
+      "pemilik": "Ibu Atika Fauziah",
+      "deskripsi": "Dapur rumahan yang menyediakan berbagai makanan dan cemilan dengan kualitas yang terjaga dan harga yang bersahabat.",
+      "alamat": "Jl. Krembangan Jaya Selatan 2, No.19, Kemayoran, Surabaya",
+      "telefon": "087852218285",
+      "sosialMedia": {
+        "instagram": "@dapur.endulbyafm",
+        "whatsapp": "087852218285"
+      }
+    },
+    {
+      "id": 13,
+      "slug": "pawon-kueku",
+      "nama": "Pawon Kueku",
+      "pemilik": "Ibu Ratna",
+      "deskripsi": "Usaha kue rumahan yang menyediakan berbagai jenis kue untuk acara dan konsumsi sehari-hari dengan rasa yang istimewa.",
+      "alamat": "Jl. Krembangan Mulyo Gang 4, No 4, Kemayoran, Surabaya",
+      "telefon": "087815251612",
+      "sosialMedia": {
+        "whatsapp": "087815251612"
+      }
+    },
+    {
+      "id": 14,
+      "slug": "dapur-cak-ran",
+      "nama": "Dapur Cak Ran",
+      "pemilik": "Cak Ran",
+      "deskripsi": "Warung dengan spesialisasi masakan tradisional yang autentik dan cita rasa yang khas, sudah terkenal di kalangan warga.",
+      "alamat": "Jl. Rajawali No.98, Kemayoran, Surabaya",
+      "telefon": "082231021155",
+      "sosialMedia": {
+        "instagram": "@wrg_cakran",
+        "whatsapp": "082231021155"
+      }
+    },
+    {
+      "id": 15,
+      "slug": "seblak-bu-mariyah",
+      "nama": "Seblak Bu Mariyah",
+      "pemilik": "Ibu Mariyah",
+      "deskripsi": "Warung seblak dengan level kepedasan yang bisa disesuaikan dan topping yang beragam, cocok untuk pencinta makanan pedas.",
+      "alamat": "Jl. Krembangan Jaya Selatan I, No.12, Kemayoran, Surabaya",
+      "telefon": "085739435390",
+      "sosialMedia": {
+        "whatsapp": "085739435390"
+      }
+    },
+    {
+      "id": 16,
+      "slug": "rujak-ulek-marinten",
+      "nama": "Rujak Ulek Bu Marinten",
+      "pemilik": "Ibu Marinten",
+      "deskripsi": "Penjual rujak ulek dengan bumbu yang segar dan buah-buahan yang selalu fresh, cocok untuk cuaca panas.",
+      "alamat": "Jl. Krembangan Jaya Selatan I, No.5, Kemayoran, Surabaya",
+      "telefon": "081234442380",
+      "sosialMedia": {
+        "whatsapp": "081234442380"
+      }
+    },
+    {
+      "id": 17,
+      "slug": "aleesha-cookies",
+      "nama": "Aleesha Cookies",
+      "pemilik": "Ibu Nanik",
+      "deskripsi": "Usaha cookies dan kue kering dengan berbagai varian rasa yang unik dan kemasan yang menarik, cocok untuk oleh-oleh.",
+      "alamat": "Jl. Krembangan Jaya Utara 9 No.30, Kemayoran Surabaya",
+      "telefon": "091216561410",
+      "sosialMedia": {
+        "whatsapp": "091216561410"
+      }
     }
   ]
 }
