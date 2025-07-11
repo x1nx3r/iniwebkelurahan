@@ -105,7 +105,7 @@ export default function Footer() {
                   UPN "Veteran" Jawa Timur
                 </p>
                 <p className="text-gray-500 text-xs mt-1">
-                  Kuliah Kerja Nyata - Sustainable Development Goals 2024
+                  Kuliah Kerja Nyata - Sustainable Development Goals 2025
                 </p>
               </div>
             </div>
@@ -117,22 +117,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                © 2024 Kelurahan Kemayoran. Semua hak dilindungi.
+                © 2025 Kelurahan Kemayoran. Semua hak dilindungi.
               </p>
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
-                href="#"
-                className="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-200"
-              >
-                Kebijakan Privasi
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-200"
-              >
-                Syarat & Ketentuan
-              </Link>
               <Link
                 href="#"
                 className="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-200"

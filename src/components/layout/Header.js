@@ -8,10 +8,8 @@ export default function Header() {
 
   const navigation = [
     { name: "Beranda", href: "/" },
-    { name: "Profil", href: "/profil" },
-    { name: "UMKM", href: "/umkm" },
-    { name: "Layanan", href: "#layanan" },
-    { name: "Kontak", href: "#kontak" },
+    { name: "Profil Kelurahan", href: "/profil" },
+    { name: "UMKM Kemayoran", href: "/umkm" },
   ];
 
   return (

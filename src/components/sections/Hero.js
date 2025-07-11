@@ -106,7 +106,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-yellow-300/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-1 bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-                15,847
+                17.659
               </h3>
               <p className="text-green-100 font-medium text-sm">
                 Jumlah Penduduk
@@ -119,7 +119,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-yellow-300/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-1 bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-                17
+                18
               </h3>
               <p className="text-green-100 font-medium text-sm">
                 UMKM Terdaftar
@@ -132,7 +132,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-yellow-300/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-1 bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-                8
+                47/9
               </h3>
               <p className="text-green-100 font-medium text-sm">RT/RW</p>
             </div>
