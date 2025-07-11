@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
@@ -18,14 +19,24 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
-              <span className="text-white font-bold text-lg">K</span>
+            <div className="relative">
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/b/ba/City_of_Surabaya_Logo.svg"
+                alt="Surabaya City Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-md"
+              />
             </div>
             <div>
               <h1 className="font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300">
-                Kelurahan Kemayoran
+                <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent font-extrabold tracking-tight">
+                  Kelurahan Kemayoran
+                </span>
               </h1>
-              <p className="text-xs text-gray-600">Surabaya</p>
+              <p className="text-xs text-gray-600 font-medium tracking-wide uppercase">
+                Kota Surabaya
+              </p>
             </div>
           </Link>
 

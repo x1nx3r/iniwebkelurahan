@@ -70,6 +70,47 @@ export default function UMKMModal({ umkm, onClose }) {
     }
   };
 
+  // Smart social media URL generator
+  const getSocialMediaUrl = (platform, handle) => {
+    const cleanHandle = handle.replace(/[@#]/g, ""); // Remove @ or # symbols
+
+    switch (platform.toLowerCase()) {
+      case "whatsapp":
+        // Handle both phone numbers and WhatsApp links
+        const phoneNumber = cleanHandle.replace(/\D/g, ""); // Remove non-digits
+        return `https://wa.me/${phoneNumber}`;
+
+      case "instagram":
+        return `https://instagram.com/${cleanHandle}`;
+
+      case "facebook":
+        return `https://facebook.com/${cleanHandle}`;
+
+      case "tiktok":
+        return `https://tiktok.com/@${cleanHandle}`;
+
+      case "twitter":
+        return `https://twitter.com/${cleanHandle}`;
+
+      case "youtube":
+        return `https://youtube.com/@${cleanHandle}`;
+
+      case "linkedin":
+        return `https://linkedin.com/in/${cleanHandle}`;
+
+      case "telegram":
+        return `https://t.me/${cleanHandle}`;
+
+      default:
+        // If it looks like a URL, return as is, otherwise try to make it a URL
+        if (handle.startsWith("http")) {
+          return handle;
+        } else {
+          return `https://${cleanHandle}`;
+        }
+    }
+  };
+
   // Check if contact info exists
   const hasPhone = umkm.telefon && umkm.telefon.trim() !== "";
   const hasWhatsApp =
@@ -212,7 +253,10 @@ export default function UMKMModal({ umkm, onClose }) {
                     {/* WhatsApp Button */}
                     {hasWhatsApp && (
                       <a
-                        href={`https://wa.me/${umkm.sosialMedia.whatsapp}`}
+                        href={getSocialMediaUrl(
+                          "whatsapp",
+                          umkm.sosialMedia.whatsapp,
+                        )}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
@@ -239,9 +283,12 @@ export default function UMKMModal({ umkm, onClose }) {
                     <div className="flex flex-wrap gap-3">
                       {Object.entries(umkm.sosialMedia).map(
                         ([platform, handle], index) => (
-                          <div
+                          <a
                             key={platform}
-                            className={`flex items-center bg-gray-100 hover:bg-gray-200 rounded-xl px-4 py-3 transition-all duration-300 group hover:scale-105 transform ${
+                            href={getSocialMediaUrl(platform, handle)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center bg-gray-100 hover:bg-gray-200 rounded-xl px-4 py-3 transition-all duration-300 group hover:scale-105 transform cursor-pointer hover:shadow-md ${
                               isVisible && !isClosing
                                 ? "translate-y-0 opacity-100"
                                 : "translate-y-4 opacity-0"
@@ -257,11 +304,11 @@ export default function UMKMModal({ umkm, onClose }) {
                               <div className="text-sm font-medium text-gray-700 capitalize">
                                 {platform}
                               </div>
-                              <div className="text-sm text-green-600">
+                              <div className="text-sm text-green-600 group-hover:text-green-700 transition-colors duration-200">
                                 {handle}
                               </div>
                             </div>
-                          </div>
+                          </a>
                         ),
                       )}
                     </div>
@@ -335,7 +382,10 @@ export default function UMKMModal({ umkm, onClose }) {
                   {/* WhatsApp Quick Link */}
                   {hasWhatsApp && (
                     <a
-                      href={`https://wa.me/${umkm.sosialMedia.whatsapp}`}
+                      href={getSocialMediaUrl(
+                        "whatsapp",
+                        umkm.sosialMedia.whatsapp,
+                      )}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${
