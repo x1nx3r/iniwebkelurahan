@@ -51,12 +51,11 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-20">
         <div className="max-w-4xl mx-auto">
           {/* Badge with glow effect */}
-          <div className="inline-flex items-center glass-effect rounded-full px-4 py-2 mb-6 pulse-glow">
+          <div className="inline-flex items-center glass-effect rounded-full px-4 py-2 mb-6">
             <MapPinIcon className="w-4 h-4 mr-2 text-yellow-300" />
             <span className="text-xs sm:text-sm font-semibold tracking-wider">
               SURABAYA, JAWA TIMUR
             </span>
-            <SparklesIcon className="w-3 h-3 ml-2 text-yellow-300" />
           </div>
 
           {/* Main heading - with better text shadow for readability */}
@@ -96,46 +95,6 @@ export default function Hero() {
                 <BuildingOfficeIcon className="w-4 h-4 ml-3 group-hover:rotate-12 transition-transform duration-300" />
               </div>
             </Link>
-          </div>
-
-          {/* Enhanced Quick stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-20">
-            <div className="glass-effect rounded-2xl p-6 card-hover border border-white/20 group backdrop-blur-md">
-              <div className="relative">
-                <UsersIcon className="w-8 h-8 mx-auto mb-3 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-yellow-300/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-1 bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-                17.659
-              </h3>
-              <p className="text-green-100 font-medium text-sm">
-                Jumlah Penduduk
-              </p>
-            </div>
-
-            <div className="glass-effect rounded-2xl p-6 card-hover border border-white/20 group backdrop-blur-md">
-              <div className="relative">
-                <BuildingOfficeIcon className="w-8 h-8 mx-auto mb-3 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-yellow-300/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-1 bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-                18
-              </h3>
-              <p className="text-green-100 font-medium text-sm">
-                UMKM Terdaftar
-              </p>
-            </div>
-
-            <div className="glass-effect rounded-2xl p-6 card-hover border border-white/20 group backdrop-blur-md">
-              <div className="relative">
-                <MapPinIcon className="w-8 h-8 mx-auto mb-3 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-yellow-300/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-1 bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-                47/9
-              </h3>
-              <p className="text-green-100 font-medium text-sm">RT/RW</p>
-            </div>
           </div>
         </div>
       </div>
