@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState, useCallback } from "react";
 import {
   XMarkIcon,
   MapPinIcon,
@@ -8,6 +8,7 @@ import {
   BuildingStorefrontIcon,
   ChatBubbleLeftRightIcon,
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function UMKMModal({ umkm, onClose }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +28,7 @@ export default function UMKMModal({ umkm, onClose }) {
   };
 
   // Handle close with animation
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     if (isClosing) return; // Prevent multiple calls
 
     setIsClosing(true);
@@ -38,7 +39,7 @@ export default function UMKMModal({ umkm, onClose }) {
     }, 300); // Match animation duration
 
     return () => clearTimeout(timer);
-  };
+  }, [isClosing, onClose]);
 
   // Handle ESC key
   useEffect(() => {
@@ -50,7 +51,7 @@ export default function UMKMModal({ umkm, onClose }) {
 
     document.addEventListener("keydown", handleEsc);
     return () => document.removeEventListener("keydown", handleEsc);
-  }, []);
+  }, [handleClose]);
 
   // Get social media icon with Font Awesome
   const getSocialIcon = (platform) => {

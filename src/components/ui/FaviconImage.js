@@ -1,5 +1,6 @@
 // src/components/ui/FaviconImage.js
 "use client";
+import Image from "next/image";
 
 export default function FaviconImage({ src, alt, fallbackDomain, className }) {
   const handleError = (e) => {

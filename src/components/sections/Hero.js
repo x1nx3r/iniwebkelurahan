@@ -6,15 +6,17 @@ import {
   BuildingOfficeIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="https://cdn.x1nx3r.uk/IMG_1265.jpg"
           alt="Surabaya City Background"
+          fill
           className="w-full h-full object-cover"
         />
         {/* Dark overlay for better text readability */}

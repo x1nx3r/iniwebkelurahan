@@ -111,7 +111,7 @@ export default function Footer() {
                   <span className="text-emerald-400 font-semibold">
                     KKN SDGs Kelompok 11
                   </span>{" "}
-                  UPN "Veteran" Jawa Timur
+                  UPN &quotVeteran&quot Jawa Timur
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function Footer() {
                 className="flex items-center space-x-1 text-gray-400 hover:text-pink-400 transition-colors duration-200 group"
               >
                 <FaviconImage
-                  src="https://instagram.com/favicon.ico"
+                  src="https://cdn.x1nx3r.uk/free-bucket/01e0f295-960f-4509-bd6a-11fcc071ccef.png"
                   alt="Instagram"
                   fallbackDomain="instagram.com"
                   className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-200"
@@ -139,7 +139,7 @@ export default function Footer() {
                 className="flex items-center space-x-1 text-gray-400 hover:text-pink-500 transition-colors duration-200 group"
               >
                 <FaviconImage
-                  src="https://tiktok.com/favicon.ico"
+                  src="https://cdn.x1nx3r.uk/free-bucket/01e0f295-960f-4509-bd6a-11fcc071ccef.png"
                   alt="TikTok"
                   fallbackDomain="tiktok.com"
                   className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-200"

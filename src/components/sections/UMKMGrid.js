@@ -5,6 +5,7 @@ import {
   BuildingStorefrontIcon,
 } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function UMKMGrid({ umkm, onSelectUMKM }) {
   return (
@@ -78,9 +79,10 @@ function UMKMCard({ item, onSelectUMKM }) {
               )}
 
               {/* Actual image */}
-              <img
+              <Image
                 src={item.foto}
                 alt={`${item.nama} - UMKM Kemayoran`}
+                fill
                 className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${
                   imageLoading ? "opacity-0" : "opacity-100"
                 }`}

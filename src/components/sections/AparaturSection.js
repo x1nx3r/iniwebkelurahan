@@ -5,6 +5,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function AparaturSection({ aparatur }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -99,19 +100,21 @@ export default function AparaturSection({ aparatur }) {
 
                           {/* Portrait Photo - 3:4 Aspect Ratio Container */}
                           <div className="mb-6">
-                            <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-lg bg-gray-100">
+                            <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-lg bg-gray-100 relative">
                               <img
                                 src={getPhotoUrl(person.id)}
                                 alt={person.nama}
-                                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 absolute inset-0"
                                 onError={(e) => {
                                   e.target.style.display = "none";
-                                  e.target.nextSibling.style.display = "flex";
+                                  e.target.parentElement.querySelector(
+                                    ".fallback-avatar",
+                                  ).style.display = "flex";
                                 }}
                               />
-                              {/* Fallback */}
+                              {/* Fallback - positioned absolutely to fill the container */}
                               <div
-                                className="w-full h-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center"
+                                className="fallback-avatar absolute inset-0 w-full h-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center"
                                 style={{ display: "none" }}
                               >
                                 <UserIcon className="w-16 h-16 text-white" />
@@ -201,13 +204,13 @@ export default function AparaturSection({ aparatur }) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+62311234567"
+                href="tel:+62313522396"
                 className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Hubungi Kantor Kelurahan
               </a>
               <a
-                href="mailto:info@kemayoran-sby.go.id"
+                href="mailto:kelurahankemayoran72@gmail.com"
                 className="bg-white text-green-600 border-2 border-green-200 hover:border-green-300 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-green-50"
               >
                 Kirim Email
