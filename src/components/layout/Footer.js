@@ -7,6 +7,7 @@ import {
   BuildingOfficeIcon,
   AcademicCapIcon,
 } from "@heroicons/react/24/outline";
+import FaviconImage from "../ui/FaviconImage";
 
 export default function Footer() {
   const footerLinks = {
@@ -27,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Contact Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
@@ -58,7 +59,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <EnvelopeIcon className="w-5 h-5 text-emerald-400" />
                 <p className="text-gray-300 text-sm">
-                  info@kemayoran-sby.go.id
+                  kelurahankemayoran72@gmail.com
                 </p>
               </div>
 
@@ -91,42 +92,66 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Subtle KKN Attribution */}
-        <div className="mt-12 mb-6">
-          <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4 backdrop-blur-sm">
-            <div className="flex items-center justify-center space-x-3">
-              <AcademicCapIcon className="w-5 h-5 text-emerald-400" />
-              <div className="text-center">
-                <p className="text-gray-300 text-sm">
-                  Website dikembangkan oleh{" "}
-                  <span className="text-emerald-400 font-semibold">
-                    KKN SDGs Kelompok 11
-                  </span>{" "}
-                  UPN &quot;Veteran&quot; Jawa Timur
-                </p>
-                <p className="text-gray-500 text-xs mt-1">
-                  Kuliah Kerja Nyata - Sustainable Development Goals 2025
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom section */}
+        {/* Bottom section with Copyright, KKN Attribution, and Social Media */}
         <div className="border-t border-gray-800 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-center md:text-left">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+            {/* Left side - Copyright */}
+            <div className="text-center lg:text-left">
               <p className="text-gray-400 text-sm">
                 © 2025 Kelurahan Kemayoran. Semua hak dilindungi.
               </p>
             </div>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
-                href="#"
-                className="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-200"
+
+            {/* Center - KKN Attribution */}
+            <div className="flex items-center space-x-3 order-3 lg:order-2">
+              <AcademicCapIcon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+              <div className="text-center">
+                <p className="text-gray-300 text-xs">
+                  Dikembangkan oleh{" "}
+                  <span className="text-emerald-400 font-semibold">
+                    KKN SDGs Kelompok 11
+                  </span>{" "}
+                  UPN "Veteran" Jawa Timur
+                </p>
+              </div>
+            </div>
+
+            {/* Right side - Social Media Links */}
+            <div className="flex items-center space-x-4 order-2 lg:order-3">
+              <a
+                href="https://www.instagram.com/mengukirkemayoran"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-1 text-gray-400 hover:text-pink-400 transition-colors duration-200 group"
               >
-                Kontak
-              </Link>
+                <FaviconImage
+                  src="https://instagram.com/favicon.ico"
+                  alt="Instagram"
+                  fallbackDomain="instagram.com"
+                  className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-200"
+                />
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@kkn11.kelurahankemayoran"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-1 text-gray-400 hover:text-pink-500 transition-colors duration-200 group"
+              >
+                <FaviconImage
+                  src="https://tiktok.com/favicon.ico"
+                  alt="TikTok"
+                  fallbackDomain="tiktok.com"
+                  className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-200"
+                />
+              </a>
+
+              <a
+                href="mailto:kknkelompok11@upnjatim.ac.id"
+                className="flex items-center space-x-1 text-gray-400 hover:text-emerald-400 transition-colors duration-200 group"
+              >
+                <EnvelopeIcon className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-200" />
+              </a>
             </div>
           </div>
         </div>
