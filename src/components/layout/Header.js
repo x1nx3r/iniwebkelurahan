@@ -1,3 +1,4 @@
+// iniwebumkm/src/components/layout/Header.js
 "use client";
 import { useState } from "react";
 import Link from "next/link";
@@ -11,6 +12,7 @@ export default function Header() {
     { name: "Beranda", href: "/" },
     { name: "Profil Kelurahan", href: "/profil" },
     { name: "UMKM Kemayoran", href: "/umkm" },
+    { name: "Berita & Pengumuman", href: "/berita" }, // Added this line
   ];
 
   return (
