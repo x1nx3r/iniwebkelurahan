@@ -111,7 +111,7 @@ export default function Footer() {
                   <span className="text-emerald-400 font-semibold">
                     KKN SDGs Kelompok 11
                   </span>{" "}
-                  UPN &quotVeteran&quot Jawa Timur
+                  UPN &quot:Veteran&quot: Jawa Timur
                 </p>
               </div>
             </div>
