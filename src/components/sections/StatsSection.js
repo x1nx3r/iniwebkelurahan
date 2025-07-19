@@ -1,6 +1,7 @@
 import {
   ChartBarIcon,
   HomeIcon,
+  BuildingStorefrontIcon,
   AcademicCapIcon,
   HeartIcon,
 } from "@heroicons/react/24/outline";
@@ -16,7 +17,7 @@ export default function StatsSection() {
       gradient: "from-green-400 to-emerald-500",
     },
     {
-      icon: AcademicCapIcon,
+      icon: BuildingStorefrontIcon,
       number: "127",
       label: "UMKM Aktif",
       description: "Usaha terdaftar",
