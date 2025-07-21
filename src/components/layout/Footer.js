@@ -135,7 +135,7 @@ export default function Footer() {
                   </span>
                 </p>
                 <p className="text-gray-400 text-xs mt-1">
-                  UPN "Veteran" Jawa Timur
+                  UPN &quot;Veteran&quot; Jawa Timur
                 </p>
               </div>
             </div>
