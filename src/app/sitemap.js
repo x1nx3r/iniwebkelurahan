@@ -1,19 +1,19 @@
 export default function sitemap() {
   return [
     {
-      url: "https://kemayoran-sby.vercel.app",
+      url: "https://iniwebumkm.x1nx3r.uk",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://kemayoran-sby.vercel.app/profil",
+      url: "https://iniwebumkm.x1nx3r.uk/profil",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://kemayoran-sby.vercel.app/umkm",
+      url: "https://iniwebumkm.x1nx3r.uk/umkm",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
