@@ -90,18 +90,6 @@ export default function UMKMGrid({
           )}
         </div>
 
-        {/* Featured UMKM Notice */}
-        {featuredCount > 0 && (
-          <div className="mb-8 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-2xl">
-            <div className="flex items-center justify-center gap-2 text-orange-800">
-              <StarIcon className="w-5 h-5" />
-              <span className="text-sm font-semibold">
-                UMKM dengan badge "Unggulan" ditampilkan di bagian atas
-              </span>
-            </div>
-          </div>
-        )}
-
         {/* UMKM Grid */}
         {sortedUMKM.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
