@@ -4,8 +4,9 @@ import {
   ExclamationTriangleIcon,
   ArrowPathIcon,
   SparklesIcon,
+  StarIcon,
 } from "@heroicons/react/24/outline";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Image from "next/image";
 
 export default function UMKMGrid({
@@ -22,6 +23,22 @@ export default function UMKMGrid({
   showStats = true,
   className = "",
 }) {
+  // Sort UMKM to show featured ones first
+  const sortedUMKM = useMemo(() => {
+    if (!umkm || umkm.length === 0) return [];
+
+    return [...umkm].sort((a, b) => {
+      // Featured items first
+      if (a.featured && !b.featured) return -1;
+      if (!a.featured && b.featured) return 1;
+      // Then by name alphabetically
+      return a.nama.localeCompare(b.nama);
+    });
+  }, [umkm]);
+
+  // Count featured UMKM
+  const featuredCount = sortedUMKM.filter((item) => item.featured).length;
+
   // Loading state
   if (loading && umkm.length === 0) {
     return <UMKMGridSkeleton title={title} subtitle={subtitle} />;
@@ -48,23 +65,47 @@ export default function UMKMGrid({
           )}
 
           {showStats && (
-            <div className="flex items-center justify-center gap-2 text-sm sm:text-base text-gray-600">
-              <BuildingStorefrontIcon className="w-5 h-5" />
-              <span>
-                {loading && umkm.length === 0
-                  ? "Memuat data UMKM..."
-                  : umkm.length === 0
-                    ? "Belum ada UMKM yang tersedia"
-                    : `Menampilkan ${umkm.length} UMKM${hasMore ? "+" : ""}`}
-              </span>
+            <div className="flex flex-col items-center gap-2 text-sm sm:text-base text-gray-600">
+              <div className="flex items-center gap-2">
+                <BuildingStorefrontIcon className="w-5 h-5" />
+                <span>
+                  {loading && umkm.length === 0
+                    ? "Memuat data UMKM..."
+                    : umkm.length === 0
+                      ? "Belum ada UMKM yang tersedia"
+                      : `Menampilkan ${umkm.length} UMKM${hasMore ? "+" : ""}`}
+                </span>
+              </div>
+
+              {/* Featured count indicator */}
+              {featuredCount > 0 && (
+                <div className="flex items-center gap-2 text-orange-600">
+                  <StarIcon className="w-4 h-4" />
+                  <span className="text-sm font-medium">
+                    {featuredCount} UMKM Unggulan
+                  </span>
+                </div>
+              )}
             </div>
           )}
         </div>
 
+        {/* Featured UMKM Notice */}
+        {featuredCount > 0 && (
+          <div className="mb-8 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-2xl">
+            <div className="flex items-center justify-center gap-2 text-orange-800">
+              <StarIcon className="w-5 h-5" />
+              <span className="text-sm font-semibold">
+                UMKM dengan badge "Unggulan" ditampilkan di bagian atas
+              </span>
+            </div>
+          </div>
+        )}
+
         {/* UMKM Grid */}
-        {umkm.length > 0 && (
+        {sortedUMKM.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {umkm.map((item) => (
+            {sortedUMKM.map((item) => (
               <UMKMCard
                 key={item.id || item.slug}
                 item={item}
@@ -223,7 +264,7 @@ function EmptyState() {
   );
 }
 
-// Individual UMKM card component
+// Standard UMKM card component (back to original styling)
 function UMKMCard({ item, onSelectUMKM }) {
   const [imageError, setImageError] = useState(false);
   const [imageLoading, setImageLoading] = useState(true);
