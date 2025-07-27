@@ -117,83 +117,73 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom section */}
+        {/* Combined Bottom section */}
         <div className="border-t border-gray-800 pt-6 sm:pt-8">
-          <div className="flex flex-col gap-6 sm:gap-8">
-            {/* KKN Attribution - Top on mobile */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 order-1">
-              <div className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
+            {/* Left side: Copyright and KKN Attribution */}
+            <div className="text-center sm:text-left">
+              <p className="text-gray-400 text-xs sm:text-sm mb-2">
+                © 2025 Kelurahan Kemayoran. Semua hak dilindungi.
+              </p>
+              <div className="flex items-center justify-center sm:justify-start gap-2">
                 <AcademicCapIcon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <HeartIcon className="w-4 h-4 text-red-400 flex-shrink-0" />
-              </div>
-              <div className="text-center">
                 <p className="text-gray-300 text-xs sm:text-sm">
                   Dikembangkan dengan <span className="text-red-400">♥</span>{" "}
                   oleh{" "}
                   <span className="text-emerald-400 font-semibold">
                     KKN SDGs Kelompok 11
+                  </span>{" "}
+                  <span className="text-gray-400">
+                    UPN "Veteran" Jawa Timur
                   </span>
-                </p>
-                <p className="text-gray-400 text-xs mt-1">
-                  UPN &quot;Veteran&quot; Jawa Timur
                 </p>
               </div>
             </div>
 
-            {/* Copyright and Social Media */}
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 order-2">
-              {/* Copyright */}
-              <div className="text-center sm:text-left order-2 sm:order-1">
-                <p className="text-gray-400 text-xs sm:text-sm">
-                  © 2025 Kelurahan Kemayoran. Semua hak dilindungi.
-                </p>
-              </div>
+            {/* Right side: Social Media Links */}
+            <div className="flex items-center justify-center gap-3 sm:gap-4">
+              <span className="text-gray-400 text-xs sm:text-sm hidden sm:inline">
+                Ikuti kami:
+              </span>
 
-              {/* Social Media Links */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 order-1 sm:order-2">
-                <span className="text-gray-400 text-xs sm:text-sm hidden sm:inline">
-                  Ikuti kami:
-                </span>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/mengukirkemayoran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 bg-gray-800 hover:bg-pink-600 text-gray-400 hover:text-white rounded-lg transition-all duration-300 group touch-manipulation"
+                  aria-label="Instagram KKN Kelompok 11"
+                >
+                  <FaviconImage
+                    src="https://cdn.x1nx3r.uk/free-bucket/96aae7bf-1a7b-4527-8ee6-6ba0dfe98a21.png"
+                    alt="Instagram"
+                    fallbackDomain="instagram.com"
+                    className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
+                  />
+                </a>
 
-                <div className="flex items-center gap-3">
-                  <a
-                    href="https://www.instagram.com/mengukirkemayoran"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 bg-gray-800 hover:bg-pink-600 text-gray-400 hover:text-white rounded-lg transition-all duration-300 group touch-manipulation"
-                    aria-label="Instagram KKN Kelompok 11"
-                  >
-                    <FaviconImage
-                      src="https://cdn.x1nx3r.uk/free-bucket/96aae7bf-1a7b-4527-8ee6-6ba0dfe98a21.png"
-                      alt="Instagram"
-                      fallbackDomain="instagram.com"
-                      className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </a>
+                <a
+                  href="https://www.tiktok.com/@kkn11.kelurahankemayoran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 bg-gray-800 hover:bg-black text-gray-400 hover:text-white rounded-lg transition-all duration-300 group touch-manipulation"
+                  aria-label="TikTok KKN Kelompok 11"
+                >
+                  <FaviconImage
+                    src="https://cdn.x1nx3r.uk/free-bucket/01e0f295-960f-4509-bd6a-11fcc071ccef.png"
+                    alt="TikTok"
+                    fallbackDomain="tiktok.com"
+                    className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
+                  />
+                </a>
 
-                  <a
-                    href="https://www.tiktok.com/@kkn11.kelurahankemayoran"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 bg-gray-800 hover:bg-black text-gray-400 hover:text-white rounded-lg transition-all duration-300 group touch-manipulation"
-                    aria-label="TikTok KKN Kelompok 11"
-                  >
-                    <FaviconImage
-                      src="https://cdn.x1nx3r.uk/free-bucket/01e0f295-960f-4509-bd6a-11fcc071ccef.png"
-                      alt="TikTok"
-                      fallbackDomain="tiktok.com"
-                      className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </a>
-
-                  <a
-                    href="mailto:kknkelompok11@upnjatim.ac.id"
-                    className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 bg-gray-800 hover:bg-emerald-600 text-gray-400 hover:text-white rounded-lg transition-all duration-300 group touch-manipulation"
-                    aria-label="Email KKN Kelompok 11"
-                  >
-                    <EnvelopeIcon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300" />
-                  </a>
-                </div>
+                <a
+                  href="mailto:kknkelompok11@upnjatim.ac.id"
+                  className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 bg-gray-800 hover:bg-emerald-600 text-gray-400 hover:text-white rounded-lg transition-all duration-300 group touch-manipulation"
+                  aria-label="Email KKN Kelompok 11"
+                >
+                  <EnvelopeIcon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300" />
+                </a>
               </div>
             </div>
           </div>
