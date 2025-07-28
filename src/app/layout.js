@@ -132,9 +132,9 @@ export default function RootLayout({ children }) {
               alternateName: "Kemayoran Village Office",
               description:
                 "Kelurahan Kemayoran, Kecamatan Krembangan, Surabaya",
-              url: "https://kemayoran-sby.vercel.app",
-              logo: "https://kemayoran-sby.vercel.app/logo.png",
-              image: "https://kemayoran-sby.vercel.app/og-image.jpg",
+              url: "https://kelurahankemayoran.com",
+              logo: "https://kelurahankemayoran.com/logo.ico",
+              image: "https://kelurahankemayoran.com/og-image.jpg",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Jl. Krembangan Baru No.49 009, RT.009/RW.01",
