@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://cdn.x1nx3r.uk/IMG_1265.jpg"
+          src="https://cdn.x1nx3r.uk/free-bucket/463855de-56ca-42c3-8cf2-4f44a4f80d17.jpeg"
           alt="Surabaya City Background"
           fill
           className="w-full h-full object-cover object-center"
