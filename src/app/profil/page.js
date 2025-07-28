@@ -18,7 +18,6 @@ export default function ProfilPage() {
       <Header />
       <div className="pt-16">
         <ProfileHero data={kelurahanData.profile} />
-        <VisiMisi data={kelurahanData.profile} />
         <DataWilayah data={kelurahanData.profile} />
         <AparaturSection aparatur={kelurahanData.aparatur} />
         <Footer />

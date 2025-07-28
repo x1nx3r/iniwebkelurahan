@@ -91,61 +91,6 @@ export default function DataWilayah({ data }) {
             </div>
           </div>
         </div>
-
-        {/* Additional Info Section */}
-        <div className="mt-8 sm:mt-12 lg:mt-16">
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-green-200/50 shadow-lg">
-            <div className="text-center">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-green-800 mb-2 sm:mb-3">
-                Informasi Tambahan
-              </h3>
-              <p className="text-green-700 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
-                Data wilayah ini diperbarui secara berkala sesuai dengan
-                informasi dari instansi terkait. Untuk informasi lebih detail
-                mengenai administrasi wilayah, silakan hubungi kantor kelurahan.
-              </p>
-
-              {/* Quick Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6 sm:mt-8">
-                <div className="bg-white/60 rounded-lg sm:rounded-xl p-3 sm:p-4 text-center border border-green-200/30">
-                  <div className="text-lg sm:text-xl lg:text-2xl font-bold text-green-600">
-                    {data.luasWilayah}
-                  </div>
-                  <div className="text-xs sm:text-sm text-green-700 font-medium">
-                    km² Luas
-                  </div>
-                </div>
-
-                <div className="bg-white/60 rounded-lg sm:rounded-xl p-3 sm:p-4 text-center border border-green-200/30">
-                  <div className="text-lg sm:text-xl lg:text-2xl font-bold text-green-600">
-                    {data.kepadatan.toLocaleString("id-ID")}
-                  </div>
-                  <div className="text-xs sm:text-sm text-green-700 font-medium">
-                    Jiwa/km²
-                  </div>
-                </div>
-
-                <div className="bg-white/60 rounded-lg sm:rounded-xl p-3 sm:p-4 text-center border border-green-200/30">
-                  <div className="text-lg sm:text-xl lg:text-2xl font-bold text-green-600">
-                    {data.kodePos}
-                  </div>
-                  <div className="text-xs sm:text-sm text-green-700 font-medium">
-                    Kode Pos
-                  </div>
-                </div>
-
-                <div className="bg-white/60 rounded-lg sm:rounded-xl p-3 sm:p-4 text-center border border-green-200/30">
-                  <div className="text-lg sm:text-xl lg:text-2xl font-bold text-green-600">
-                    4
-                  </div>
-                  <div className="text-xs sm:text-sm text-green-700 font-medium">
-                    Batas Wilayah
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
