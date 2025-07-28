@@ -18,7 +18,7 @@ export default function StatsSection() {
     },
     {
       icon: BuildingStorefrontIcon,
-      number: "127",
+      number: "217",
       label: "UMKM Aktif",
       description: "Usaha terdaftar",
       color: "teal",
