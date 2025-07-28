@@ -118,7 +118,7 @@ export default function Hero() {
             <div className="glass-effect rounded-xl sm:rounded-2xl p-3 sm:p-4 text-center transform hover:scale-105 transition-all duration-300 flex-1 max-w-xs">
               <BuildingStorefrontIcon className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-300 mx-auto mb-1 sm:mb-2" />
               <div className="text-lg sm:text-xl lg:text-2xl font-bold text-white">
-                220+
+                200+
               </div>
               <div className="text-xs sm:text-sm text-green-100">UMKM</div>
             </div>
