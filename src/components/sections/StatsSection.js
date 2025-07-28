@@ -153,7 +153,12 @@ export default function StatsSection() {
                     time: "07:00 - 16:00",
                     available: true,
                   },
-                  { day: "Sabtu - Minggu", time: "Tutup", available: false },
+                  {
+                    day: "Sabtu",
+                    time: "07:00 - 12:00",
+                    available: true,
+                  },
+                  { day: "Minggu", time: "Tutup", available: false },
                 ].map((schedule, index) => (
                   <div
                     key={index}
