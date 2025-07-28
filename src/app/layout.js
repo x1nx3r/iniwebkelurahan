@@ -188,8 +188,9 @@ export default function RootLayout({ children }) {
         {/* Fixed Google Analytics using Next.js Script component */}
         {process.env.NODE_ENV === "production" && (
           <>
+            {/* Google tag (gtag.js) */}
             <Script
-              src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"
+              src="https://www.googletagmanager.com/gtag/js?id=G-SQV45FS7VS"
               strategy="afterInteractive"
             />
             <Script id="google-analytics" strategy="afterInteractive">
@@ -197,7 +198,7 @@ export default function RootLayout({ children }) {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'GA_TRACKING_ID');
+                gtag('config', 'G-SQV45FS7VS');
               `}
             </Script>
           </>
