@@ -187,20 +187,6 @@ export default function BeritaModal({ berita, onClose }) {
               )}
             </div>
 
-            {/* Ringkasan */}
-            {berita.ringkasan && (
-              <div className="mb-6 sm:mb-8">
-                <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 p-4 sm:p-6 rounded-r-xl sm:rounded-r-2xl">
-                  <h3 className="text-base sm:text-lg font-semibold text-green-800 mb-2">
-                    Ringkasan
-                  </h3>
-                  <p className="text-green-700 leading-relaxed text-sm sm:text-base">
-                    {berita.ringkasan}
-                  </p>
-                </div>
-              </div>
-            )}
-
             {/* Content */}
             <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
               <div
